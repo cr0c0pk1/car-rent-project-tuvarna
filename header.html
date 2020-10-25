@@ -1,0 +1,92 @@
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <p class="uppercaseText">support mail</p>
+                    <a class="link" href="mailto:example@example.com">example@example.com</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="imgRow">
+                        <div class="imgCol">
+                            <a href="index.php"><img class="carLogoAndText" src="assets/images/car_text.png"
+                                    alt="car_text"></a>
+                        </div>
+                        <div class="imgCol">
+                            <a href="index.php"><img class="carLogoAndText" src="assets/images/car_logo_transparent.png"
+                                    alt="logo"></a>
+                        </div>
+                        <div class="imgCol imgPad">
+                            <a href="index.php"><img class="carLogoAndText" src="assets/images/rent_text.png"
+                                    alt="rent_text"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon mobileIcon"><i class="fa fa-mobile"></i></div>
+                    <p class="uppercaseText">service helpline</p>
+                    <a class="link" href="tel:+359891234567">+359891234567</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stickyNavbar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cars</a>
+                  <ul class="dropdown">
+                    <li><a href="cars.php">All Cars</a></li>
+                    <li><a href="orderBodyType.php">Cars Ordered By Body Type</a></li>
+                    <li><a href="orderRentDays.php">Cars Ordered By Rent Days</a></li>
+                    <li><a href="orderRentDate.php">Cars Ordered By Rent Date</a></li>
+                    <li><a href="orderCustomers.php">Cars Ordered By Customers</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Find</a>
+                  <ul class="dropdown">
+                    <li><a href="findCarsBodyType.php">Find Cars by Body Type</a></li>
+                    <li><a href="findCarsMake.php">Find Cars by Make</a></li>
+                    <li><a href="findCarsModel.php">Find Cars by Model</a></li>
+                    <li><a href="findCarsPrice.php">Find Cars by Price</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.php">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.php">Contact</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-user-plus"></i> Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-sign-in"></i> Login</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+</header>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("stickyNavbar");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
